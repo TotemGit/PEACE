@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEACE Pathway</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif
+        }
+
+        h1, h2{
+            font-family: 'Poppins';
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        header{
+            max-height: 100vh;
+        }
+
+        header h1{
+            margin: 0;
+            padding: 15px;
+        }
+
+        .patient-purple{background: #AA60B7; color:#fff;}
+        .carer-purple{background: #8A43AF; color:#fff;}
+        .clinician-purple{background: #6734B5; color:#fff;}
+
+        .cta{
+            color: #00B0F0;
+        }
+
+        a{
+            font-family: 'Poppins';
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+
+        section, footer{
+            padding: 50px 20px;
+            text-align: center;            
+        }
+
+        section:nth-child(odd){
+            background:#FDF5FF
+        }
+
+        #hero{
+            height: 500px;
+        }
+
+        #hero, .resource-links{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #hero .hero-option{
+            padding: 40px;
+            flex-grow: 1;
+            flex-basis: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: flex-grow 0.3s ease-out;
+        }
+
+        #hero .hero-option h2{
+            margin: 0;
+        }
+
+        #hero .hero-option p{
+            max-height: 0;
+            overflow: hidden;
+            
+            opacity: 0;
+            margin: 30px 0 0 0;
+        }
+
+        #hero .hero-option.expanded{
+            flex-grow: 4;
+        }
+
+        #hero .hero-option.expanded p{
+            transition: max-height 0.6s ease, opacity 0.6s ease-out;
+            transition-delay: 0.2s;
+            opacity: 1;
+            max-height: 400px;
+        }
+        
+        section p{
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .resource-links{
+            margin-top: 50px;
+        }
+
+        .resource-link{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="" alt="PEACE"></h1>
+        <div id="hero">
+            <div class="hero-option patient-purple">
+                <h2>Are you someone with an Eating Disorder and Autism?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos sunt eum libero, alias natus asperiores voluptatum perferendis corporis et maiores, voluptatibus ipsam, voluptas aspernatur quod nostrum reprehenderit minus nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quibusdam consectetur dolor. Magnam consectetur magni neque adipisci nihil vero nostrum reprehenderit facere nulla, et quae ipsa deleniti dolorum quis hic.</p>
+            </div>
+            <div class="hero-option carer-purple">
+                <h2>Are you a Carer?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptatum vel quae magni praesentium doloribus et itaque possimus. Est libero odit tempore nesciunt reprehenderit, beatae tenetur dolores consectetur quaerat laborum.</p>
+            </div>
+            <div class="hero-option clinician-purple">
+                <h2>Are you a Clinician</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, modi reprehenderit. Natus facilis ipsam aspernatur magnam quisquam eaque voluptatibus optio similique incidunt iure, aliquam dolore error tempora, totam voluptas? Veniam.</p>
+            </div>
+        </div>
+    </header>    
+    <section>
+        <h2>What is PEACE?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad? Sunt unde id ut saepe reprehenderit doloribus. Inventore asperiores tempora maxime! Dolor, officiis dicta. Incidunt, omnis. Ipsa quaerat dolor illum!</p>
+    </section>
+    <section>
+        <h2>Help and Support</h2>
+        <p>Need some advice? Want to find a PEACE center near you? Want to get more involved?</p>
+        <div class="contact-icon">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="paper">Hello!</div>
+            </div>
+        </div>
+        <p>Reach out to our team</p>
+        <a class="cta" href="mailto:team@peacepathway.org">team@peacepathway.org</a>
+        <div class="social-links">
+
+        </div>
+    </section>
+    <section>
+        <h2>Are you a Researcher?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt vel deserunt blanditiis dolorum eligendi dolor rem ducimus laborum voluptate. Officiis, consequuntur numquam impedit veniam eveniet natus facilis obcaecati at?</p>
+    </section>
+    <section>
+        <h2>Resources</h2>
+        <p>
+            PEACE is the first pathway developed purely to help those affected by Eating Disorders and Autism. <br>
+            Check out the latest developments in our research.
+        </p>
+        <div class="resource-links">
+            <a class="resource-link patient-purple" href="">For those with ASD & ED</a>
+            <a class="resource-link carer-purple" href="">For Carers</a>
+            <a class="resource-link clinician-purple" href="">For Clinicians</a>
+        </div>        
+    </section>
+    <footer>
+        <div>
+            <img src="" alt="PEACE">
+        </div>
+        <p>
+            <span>PEACE Pathway 2020 All rights Reserved</span>
+            <span>Privacy Policy</span>
+            <span>Website by <a href="https://www.totemise.com">TOTEM</a></span>
+        </p>
+        <div class="social-links">
+
+        </div>
+        <div class="related-orgs">
+            <img src="" alt="Kings College London">
+            <img src="" alt="The Health Foundation">
+            <img src="" alt="South London and Maudsley - NHS Foundation Trust">
+            <img src="" alt="Maudsley Charity">
+        </div>
+    </footer>
+    <script>
+        var options = document.querySelectorAll('.hero-option');
+        for (var i=0;i<options.length;i++) {
+            let el = options[i]
+            el.onclick = function() {
+                for (var j=0;j<options.length;j++) {options[j].classList.remove('expanded')}
+                el.classList.toggle('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
