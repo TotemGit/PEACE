@@ -125,17 +125,24 @@
 
         .resource-links{
             margin-top: 50px;
+            align-items: center;
         }
 
         .resource-link{
             width: 100px;
             height: 100px;
+            margin: 20px 0;
             display: inline-block;
             padding: 20px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .resource-link:hover{
+            transform: scale(1.15);
         }
 
         footer p{
@@ -181,10 +188,6 @@
             .resource-links{
                 flex-direction: column;
                 align-items: center;
-            }
-
-            .resource-link{
-                margin-top: 30px;
             }
         }
     </style>
