@@ -24,7 +24,7 @@
         }
 
         h1 img{
-            height: 40px;
+            height: 30px;
             display: block;
         }
 
@@ -59,6 +59,7 @@
 
         #hero{
             min-height: 500px;
+            cursor: pointer;
         }
 
         #hero, .resource-links{
@@ -267,10 +268,10 @@
         var options = document.querySelectorAll('.hero-option');
         for (var i=0;i<options.length;i++) {
             let el = options[i]
-            el.onclick = function() {
-                for (var j=0;j<options.length;j++) {options[j].classList.remove('expanded')}
+            el.addEventListener('click', function(i, e) {
+                for (var j=0;j<options.length;j++) {if(i !== j) options[j].classList.remove('expanded')}
                 el.classList.toggle('expanded');
-            }
+            }.bind(el, i));
         }
     </script>
 </body>
