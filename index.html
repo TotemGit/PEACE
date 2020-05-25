@@ -68,6 +68,7 @@
         }
 
         #hero .hero-option{
+            position: relative;
             padding: 40px;
             flex-grow: 1;
             flex-basis: 0;
@@ -77,6 +78,13 @@
             align-items: center;
             flex-direction: column;
             transition: flex-grow 0.3s ease-out;
+        }
+
+        #hero .hero-option:after{
+            content: 'Find Out More';
+            font-size: 20px;
+            position: absolute;
+            bottom: 50px;
         }
 
         #hero .hero-option h2{
@@ -93,6 +101,10 @@
 
         #hero .hero-option.expanded{
             flex-grow: 4;
+        }
+
+        #hero .hero-option.expanded:after{
+            display: none;
         }
 
         #hero .hero-option.expanded p{
@@ -177,6 +189,10 @@
             #hero{
                 flex-direction: column;
                 justify-content: start;
+            }
+
+            #hero .hero-option:after{
+                display: none;
             }
 
             #hero .hero-option p{
